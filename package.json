@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.4.2",
+    "@material-ui/styles": "^4.4.1",
     "grommet": "^2.7.8",
     "lodash": "^4.17.15",
     "polished": "^3.4.1",

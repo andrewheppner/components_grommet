@@ -1,13 +1,17 @@
 import React from "react";
 import grommetTheme from "./Theme/index";
+import globalTheme from "./material-components/globalTheme";
 import { Grommet } from "grommet";
 import Button from "./components/Button";
 import RadioButton from "./components/RadioButton";
+import RadioSelector from "./material-components/RadioSelector/index";
+import { ThemeProvider } from "styled-components";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
+      <h1>Grommet Components</h1>
       <Grommet theme={grommetTheme}>
         <div style={{ marginBottom: "32px" }}>
           <Button
@@ -45,6 +49,10 @@ function App() {
           />
         </div>
       </Grommet>
+      <h1>Material UI Components</h1>
+      <ThemeProvider theme={globalTheme}>
+        <RadioSelector />
+      </ThemeProvider>
     </div>
   );
 }
