@@ -51,7 +51,57 @@ function App() {
       </Grommet>
       <h1>Material UI Components</h1>
       <ThemeProvider theme={globalTheme}>
-        <RadioSelector />
+        <>
+          <div style={{ marginBottom: "50px" }}>
+            <RadioSelector
+              id="option1"
+              label="Default radio button"
+              errorMessage={null}
+              onChange={id => {}}
+            />
+          </div>
+          <div style={{ marginBottom: "50px" }}>
+            <RadioSelector
+              id="option2"
+              label="Default radio button"
+              errorMessage={null}
+              onChange={id => {}}
+              isChecked
+            />
+          </div>
+          <div style={{ marginBottom: "50px" }}>
+            <RadioSelector
+              id="option3"
+              label="Default radio button"
+              errorMessage="Error message line one"
+              onChange={id => {}}
+            />
+          </div>
+          <div style={{ marginBottom: "50px" }}>
+            <RadioSelector
+              id="option4"
+              label="Default radio button"
+              errorMessage={null}
+              onChange={id => {}}
+              withFormField
+              formFieldLabel="Text field label"
+              placeholderText="e.g. Placeholder text"
+              onFormFieldChange={e => console.log(e.target.value, "form input")}
+            />
+          </div>
+          <div style={{ marginBottom: "50px" }}>
+            <RadioSelector
+              id="option4"
+              label="Default radio button"
+              errorMessage={null}
+              onChange={id => {}}
+              isChecked={false}
+              withFormField
+              placeholderText="e.g. Placeholder text"
+              onFormFieldChange={e => console.log(e.target.value, "form input")}
+            />
+          </div>
+        </>
       </ThemeProvider>
     </div>
   );

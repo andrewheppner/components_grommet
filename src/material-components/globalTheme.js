@@ -5,7 +5,8 @@ const globalTheme = {
   willfulGrey: "#4A4A4A",
   willfulYellow: "#FFDC1E",
   willfulBlueDark2: "#004EB5",
-  error: "#FF2222"
+  error: "#FF2222",
+  willfulGrey2: "#CACDD4"
 };
 
 export default globalTheme;

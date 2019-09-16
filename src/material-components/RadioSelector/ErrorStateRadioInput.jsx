@@ -35,7 +35,7 @@ const RadioButtonLabel = styled.label`
   height: 19px;
   border-radius: 50%;
   background: #ffffff;
-  border: 3px solid ${props => props.theme.willfulLightBlue};
+  border: 3px solid ${props => props.theme.error};
 `;
 const RadioButton = styled.input`
   opacity: 0;

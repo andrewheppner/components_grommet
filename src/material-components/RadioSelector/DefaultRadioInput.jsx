@@ -1,5 +1,4 @@
 import React from "react";
-import { Radio } from "@material-ui/core";
 import styled from "styled-components";
 
 const DefaultRadioInput = ({ isChecked, handleOnChange }) => (
